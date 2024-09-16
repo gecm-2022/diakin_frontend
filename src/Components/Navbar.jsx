@@ -11,14 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white  md:h-[14vh] shadow-md sticky top-0 z-10 w-[100vw]  flex">
       <div className="container mx-auto flex items-center justify-between  p-4">
-        <div className="md:hidden mx-2 ">
-          <img
-            className="invert  cursor-pointer mx-1 m-auto flex"
-            src={menuOpen ? "/img/close.svg" : "/img/hamburger.svg"}
-            onClick={toggleMenu}
-            alt="menu"
-          />
-        </div>
+      
         <img
           src="/logo.png" // Path to the image in the public directory
           alt="Logo"
@@ -37,7 +30,7 @@ const Navbar = () => {
           {/* Example links */}
           <NavLink
             to="/"
-            className="text-gray-700 hover:text-blue-500"
+            className="md:text-gray-700 hover:text-blue-500"
             aria-label="Home"
           >
             Home
@@ -45,7 +38,7 @@ const Navbar = () => {
           {userType == "admin" && (
             <NavLink
               to="/adminDashboard"
-              className="text-gray-700 hover:text-blue-500"
+              className="md:text-gray-700 hover:text-blue-500"
               aria-label="Home"
             >
               Dashboard
@@ -54,14 +47,14 @@ const Navbar = () => {
 
           <NavLink
             to="/about"
-            className="text-gray-700 hover:text-blue-500"
+            className="md:text-gray-700 hover:text-blue-500"
             aria-label="About Us"
           >
             About
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-gray-700 hover:text-blue-500"
+            className="md:text-gray-700 hover:text-blue-500"
             aria-label="Contact Us"
           >
             Contact
@@ -84,6 +77,14 @@ const Navbar = () => {
               </div>
             )}
           </div>
+        </div>
+        <div className="md:hidden mx-2 ">
+          <img
+            className="invert  cursor-pointer mx-1 m-auto flex"
+            src={menuOpen ? "/img/close.svg" : "/img/hamburger.svg"}
+            onClick={toggleMenu}
+            alt="menu"
+          />
         </div>
       </div>
     </nav>
