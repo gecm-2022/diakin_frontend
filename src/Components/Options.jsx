@@ -43,7 +43,7 @@ const Options = () => {
           {
             img: "/withpass.png",
             label: "Withdraw password",
-            link: "/withdrawpassword",
+            link: "/changepassword",
           },
           {
             img: "/withpass.png",

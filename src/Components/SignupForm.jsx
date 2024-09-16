@@ -99,12 +99,12 @@ const SignUpForm = () => {
       </form>
       <div className="">
         <h3 className="my-3 text-center">
-          Don't have an account?{" "}
+          Already have an account?{" "}
           <NavLink
             className={"removeLinkHover text-blue-600 hover:text-blue-800 "}
-            to="/signup"
+            to="/login"
           >
-            Signup!
+            Login !
           </NavLink>{" "}
         </h3>
       </div>

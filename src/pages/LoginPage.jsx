@@ -10,7 +10,7 @@ const LoginPage = () => {
           <h1 className="text-4xl  text-center font-mono select-none">
              Login
           </h1>
-        <hr className="w-auto mx-[50px] border-2 rounded  border-blue-400 mt-3" />
+        <hr className="w-auto mx-[20px] border-2 rounded  border-blue-400 mt-3" />
 
     
         </div>

@@ -102,7 +102,7 @@ const LoginForm = () => {
           Don't have an account?{" "}
           <NavLink
             className={"removeLinkHover text-blue-600 hover:text-blue-800 "}
-            to="/signup"
+            to="/register"
           >
             Signup!
           </NavLink>{" "}
